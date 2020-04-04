@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sunrise/Sunset API</title>
+  <script src="jquery-3.4.1.min.js"></script>
+
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!--Stylesheet-->
+	<link rel="stylesheet" type="text/css" href="est.css">
+  <link rel="stylesheet" type="text/css" href="global.css">
+
+  <!--Bootstrap-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<!--Scripts-->
+	<script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Sunrise and Sunset</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Times 
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="est.html">EST</a>
+          <a class="dropdown-item" href="cst.html">CST</a>
+          <a class="dropdown-item" href="mst.html">MST</a>
+          <a class="dropdown-item" href="pst.html">PST</a>
+        </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="jumbotron jumbotron-fluid text-light background-game">
+      <div class="container page-header">
+        <h3 class="display-3 page-title" style="text-align:center; color:black"><b>EST - Eastern Standard Time</b></h1>
+      </div>
+    </div>
+  </header>
+
+  <section class = "container">
+    <h3 align = "center">Cities</h3>
+    <hr></hr>
+    <div class = "row">
+    <div class = "col-md-6">
+      <p class="lead text">
+        <ul>
+        <li>Albany, New York</li>
+        <li>Atlanta, Georgia</li>
+        <li>Augusta, Georgia</li>
+        <li>Baltimore, Maryland</li>
+        <li>Barrie, Ontario</li>
+        <li>Bogotá, Colombia</li>
+        <li>Boston, Massachusetts</li>
+        <li>Buffalo, New York</li>
+        <li>Burlington, Vermont</li>
+        <li>Charleston, South Carolina</li>
+        <li>Charleston, West Virginia</li>
+        <li>Charlotte, North Carolina</li>
+        <li>Chattanooga, Tennessee</li>
+        <li>Cincinnati, Ohio</li>
+        <li>Cleveland, Ohio</li>
+        <li>Columbia, South Carolina</li>
+        <li>Columbus, Ohio</li>
+        <li>Detroit, Michigan</li>
+        <li>Fort Wayne, Indiana</li>
+        <li>Grand Rapids, Michigan</li>
+        <li>Greater Sudbury, Ontario</li>
+        <li>Greenville, South Carolina</li>
+        <li>Greensboro, North Carolina</li>
+        <li>Guayaquil, Ecuador</li>
+        <li>Hamilton, Ontario</li>
+        <li>Hampton Roads, Virginia</li>
+        <li>Havana, Cuba</li>
+        <li>Hartford, Connecticut</li>
+        <li>Indianapolis, Indiana</li>
+        <li>Iqaluit, Nunavut</li>
+        <li>Jacksonville, Florida</li>
+        <li>Key West, Florida</li>
+        <li>Kingston, Jamaica</li>
+        <li>Knoxville, Tennessee</li>
+        <li>La Paz, Bolivia</li>
+        <li>Lima, Peru</li>
+        <li>London, Ontario</li>
+        </ul>
+      </div>
+      <div class = "col-md-6">
+        <p class = "lead text">
+          <ul>
+          <li>Louisville, Kentucky</li>
+          <li>Manchester, New Hampshire</li>
+          <li>Medellín, Colombia</li>
+          <li>Miami, Florida</li>
+          <li>Montreal, Quebec</li>
+          <li>Nassau, Bahamas</li>
+          <li>New York, New York</li>
+          <li>Orlando, Florida</li>
+          <li>Ottawa, Ontario</li>
+          <li>Oshawa, Ontario</li>
+          <li>Panama City, Panama</li>
+          <li>Philadelphia, Pennsylvania</li>
+          <li>Pittsburgh, Pennsylvania</li>
+          <li>Port-au-Prince, Haiti</li>
+          <li>Portland, Maine</li>
+          <li>Providence, Rhode Island</li>
+          <li>Quebec, Quebec</li>
+          <li>Quito, Ecuador</li>
+          <li>Raleigh, North Carolina</li>
+          <li>Richmond, Virginia</li>
+          <li>Rochester, New York</li>
+          <li>Springfield, Massachusetts</li>
+          <li>Syracuse, New York</li>
+          <li>Tampa, Florida</li>
+          <li>Thunder Bay, Ontario</li>
+          <li>Toledo, Ohio</li>
+          <li>Toronto, Ontario</li>
+          <li>Trenton, New Jersey</li>
+          <li>Washington, D.C.</li>
+          <li>Wilmington, Delaware</li>
+          <li>Windsor, Ontario</li>
+          <li>Worcester, Massachusetts</li>
+          </ul>
+     </p>
+    </div>
+  </section>
+
+  <hr>
+
+  <div class= "latlongDiv">
+      <p>Latitude?</p> 
+      <input class="latitude" placeholder="your answer"> 
+      <p>Longitude?</p> 
+      <input class="longitude" placeholder="your answer">
+      <button class="latlongButton" onclick="letSee()">Submit</button>
+  </div>
+
+	<div class="container">
+		<div class="row" id="timeDisplay">
+			<div class="col-6">
+				<p id="sunrise">sunrise</p>
+			</div>
+			<div class="col-6">
+				<p id="sunset">sunset</p>
+			</div>
+		</div>
+	</div>
+
+  <br>
+  <hr>
+  <br>
+  <br>
+
+  <footer>
+		<div class="container1">
+			<div class="row footer-stuff text-center">
+				<div class="col-md-12 footer-col">
+					<h3 class="footer-heading"> Contact Information</h3>
+					<ul class="footer-list">
+						<li>123 Tillary Street, Brooklyn, NY, 11223</li>
+						<li>luis@sunrise.org </li>
+						<li>+1 234-567-890</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+  </footer> 
+
+  
+</body>
+
+</html>

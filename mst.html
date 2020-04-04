@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sunrise/Sunset API</title>
+  <script src="jquery-3.4.1.min.js"></script>
+
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!--Stylesheet-->
+	<link rel="stylesheet" type="text/css" href="mst.css">
+  <link rel="stylesheet" type="text/css" href="global.css">
+
+  <!--Bootstrap-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<!--Scripts-->
+	<script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Sunrise and Sunset</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Times 
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="est.html">EST</a>
+          <a class="dropdown-item" href="cst.html">CST</a>
+          <a class="dropdown-item" href="mst.html">MST</a>
+          <a class="dropdown-item" href="pst.html">PST</a>
+        </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="jumbotron jumbotron-fluid text-light background-game">
+      <div class="container page-header">
+        <h3 class="display-3 page-title" style="text-align:center"><b>MST - Mountain Time Zone</b></h1>
+      </div>
+    </div>
+  </header>
+
+  <section class = "container">
+    <h3 align = "center">Cities</h3>
+    <hr></hr>
+      <p class="lead text">
+        <ol>
+        <li>Alberta</li>
+        <li> British Columbia</li>
+        <li> Baja California Sur</li>
+        <li> Chihuahua</li>
+        <li> Colorado</li>
+        <li> Montana</li>
+        <li> New Mexico</li>
+        <li> Utah</li>
+        <li> Wyoming</li>
+        <li> Arizona</li>
+        </ol>
+        </p>
+    </div>
+  </section>
+
+  <hr>
+
+  <div class= "latlongDiv">
+      <p>Latitude?</p> 
+      <input class="latitude" placeholder="your answer"> 
+      <br>
+      <p>Longitude?</p> 
+      <input class="longitude" placeholder="your answer">
+      <button class="latlongButton" onclick="letSee()">Submit</button>
+  </div>
+
+	<div class="container">
+		<div class="row" id="timeDisplay">
+			<div class="col-6">
+				<p id="sunrise">sunrise</p>
+			</div>
+			<div class="col-6">
+				<p id="sunset">sunset</p>
+			</div>
+		</div>
+	</div>
+
+  <br>
+  <hr>
+  <br>
+  <br>
+
+  <footer>
+		<div class="container1">
+			<div class="row footer-stuff text-center">
+				<div class="col-md-12 footer-col">
+					<h3 class="footer-heading"> Contact Information</h3>
+					<ul class="footer-list">
+						<li>123 Tillary Street, Brooklyn, NY, 11223</li>
+						<li>luis@sunrise.org </li>
+						<li>+1 234-567-890</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+  </footer> 
+
+  
+</body>
+
+</html>
